@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css_extra %}
+<link rel="stylesheet" href="{% static 'app1/style.css' %}">
+{% endblock %}
+{% block title %}App1{% endblock %}
+{% block link1 %} <a href="{% url 'app1:v1' %}">Vista 1</a>{% endblock %}
+{% block link2 %} <a href="{% url 'app1:v2' %}">Vista 2</a> {% endblock %}
+{% block main %}
+<h1> Bienvenido a la App 1</h1>
+<img width="500"  src="https://imgs.search.brave.com/38-nsWqJtdiqs5ym-ITCzGCtkIrxc1YcPsC4vWNcd-8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/eW91LWNhbi1oZWFy/LXRoZS1jcm93ZC1j/aGVlcnMtZm9yLXVt/YW11c3VtZS10aGUt/ZnVsbC1zZWdtZW50/LXYwLWx1OTcwcTli/MXI2ZzEuanBlZz9h/dXRvPXdlYnAmcz1h/YjA5M2E2OTJmY2Y0/NGYyNGY2ZmM2YWZi/ZjdmZmNmMDA4NmM4/NWEx" alt="">
+{% endblock %}

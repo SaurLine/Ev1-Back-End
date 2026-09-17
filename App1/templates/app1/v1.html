@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css_extra %}
+<link rel="stylesheet" href="{% static 'app1/style.css' %}">
+{% endblock %}
+{% block title %}App1 Vista1{% endblock %}
+{% block link1 %} <a href="{% url 'app1:inicio' %}">Inicio</a>{% endblock %}
+{% block link2 %} <a href="{% url 'app1:v2' %}">Vista 2</a> {% endblock %}
+{% block main %}
+<h1> Esto es la vista 1 de la app 1</h1>
+<img src="https://media1.tenor.com/m/TuWaPRQB6uIAAAAd/el-condor-pasa-uma-musume.gif" alt="">
+{% endblock %}
