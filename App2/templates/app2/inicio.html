@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css_extra %}
+<link rel="stylesheet" href="{% static 'app2/style.css' %}">
+{% endblock %}
+{% block title %}App1{% endblock %}
+{% block link1 %} <a href="{% url 'app2:v1' %}">Vista 1</a>{% endblock %}
+{% block link2 %} <a href="{% url 'app2:v2' %}">Vista 2</a> {% endblock %}
+{% block main %}
+<h1> Bienvenido a la App 2</h1>
+<img width="500"  src="https://preview.redd.it/whats-the-most-umazing-uma-show-that-youve-ever-watched-v0-7bmnvz22m3sf1.jpeg?width=640&crop=smart&auto=webp&s=0b9fe3a5bcaa6e240365cc3470eb96b67c7b0d53" alt="">
+{% endblock %}
